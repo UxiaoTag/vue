@@ -207,7 +207,7 @@ const sendGetApi = async () => {
                 clearable
               ></el-input>
               <el-button style="margin-left: 10px" @click="sendAppendApi"
-                >Put</el-button
+                >Append</el-button
               >
             </div>
             <div
