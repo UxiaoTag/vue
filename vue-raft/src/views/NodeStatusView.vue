@@ -76,6 +76,9 @@ const startServer = async (serverName) => {
       Op: "Start",
     });
     console.log(`Server started with Gid: ${gid}, Id: ${index}`);
+    //开启关闭服务器需要休息一段时间给与数据库启动一个充足的时间
+    console.log("Waiting for the database to initialize...");
+    await new Promise(resolve => setTimeout(resolve, 500)); // 等待0.5秒
     refreshData();
   } catch (error) {
     console.error(
@@ -95,6 +98,9 @@ const shutdownServer = async (serverName) => {
       Op: "Shutdown",
     });
     console.log(`Server shutdown with Gid: ${gid}, Id: ${index}`);
+    //开启关闭服务器需要休息一段时间给与数据库启动一个充足的时间
+    console.log("Waiting for the database to initialize...");
+    await new Promise(resolve => setTimeout(resolve, 500)); // 等待0.5秒
     refreshData();
   } catch (error) {
     console.error(
