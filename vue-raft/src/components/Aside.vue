@@ -55,6 +55,11 @@ watch(
                         <el-icon><Location /></el-icon><span>节点状态</span>
                     </template>
                 </el-menu-item>
+                <el-menu-item ref="menuItemLogs" index="/logs">
+          <template #title>
+            <el-icon><Notebook /></el-icon><span>日志信息</span>
+          </template>
+        </el-menu-item>
             </el-menu>
         </el-scrollbar>
     </el-aside>

@@ -36,8 +36,8 @@ async function fetchDataAndInit() {
 }
 
 function fetchShardData(num) {
-  // 设置请求超时时间为5000毫秒（5秒）
-  const timeout = 5000;
+  // 设置请求超时时间为10000毫秒（10秒）
+  const timeout = 10000;
 
   // 返回一个Promise，它将在超时后被拒绝
   const timeoutPromise = new Promise((resolve, reject) => {
